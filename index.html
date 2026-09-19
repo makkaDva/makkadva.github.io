@@ -2,15 +2,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zywo</title>
+<!--
+  Ovaj repo postoji zbog /app-ads.txt, koji AdMob trazi iskljucivo na korenu
+  domena. Sama stranica o aplikaciji zivi u repou `zywo`, na /zywo/ — pa koren
+  samo prosledjuje tamo umesto da drzi drugu, tanju verziju istog sadrzaja.
+
+  Preusmerenje je meta refresh, ne serverski 301: GitHub Pages servira staticke
+  fajlove i nema gde da se upise pravilo. Vazno je da ono dotice ISKLJUCIVO
+  index.html — /app-ads.txt se servira direktno i ostaje text/plain.
+-->
+<link rel="canonical" href="https://makkadva.github.io/zywo/">
+<meta http-equiv="refresh" content="0; url=/zywo/">
 <style>
-  body { font: 16px/1.6 -apple-system, system-ui, sans-serif; max-width: 34rem;
+  body { font: 16px/1.6 -apple-system, system-ui, sans-serif; max-width: 30rem;
          margin: 0 auto; padding: 4rem 1.25rem; color: #1d1b16; }
   a { color: #b4500f; }
 </style>
-<h1>Zywo</h1>
-<p>Workout Monster RPG — level a creature with real movement.</p>
-<p>
-  <a href="/zywo/">App page</a> ·
-  <a href="/zywo/privacy.html">Privacy</a> ·
-  <a href="/zywo/terms.html">Terms</a>
-</p>
+<p>Redirecting to <a href="/zywo/">Zywo</a>…</p>
+<script>location.replace('/zywo/');</script>
